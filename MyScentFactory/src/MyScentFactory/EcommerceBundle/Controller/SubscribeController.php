@@ -8,12 +8,14 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class SubscribeController extends Controller
 {
     /**
-     * @Route("Inscription", name="subscribe")
+     * @Route("/Inscription/{inscription}", name="inscription")
      */
     public function subscribeAction()
     {
         return $this->render('MyScentFactoryEcommerceBundle:Subscribe:subscribe.html.twig', array(
-            // ...
+            'inscription' => 'inscription',
+            'compte' => 'compte',
+            'lab' => 'Laboratoire'
         ));
     }
 

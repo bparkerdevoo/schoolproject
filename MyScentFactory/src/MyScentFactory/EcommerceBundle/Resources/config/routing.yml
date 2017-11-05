@@ -7,7 +7,7 @@ msf_homepage:
     defaults: {_controller: MyScentFactoryEcommerceBundle:Default:home }
 
 susbscription:
-    path: /Inscription
+    path: /Inscription/
     defaults: {_controller:MyScentFactoryEcommerceBundle:Subscribe:subscribe }
 
 connexion:
