@@ -1,0 +1,3 @@
+my_scent_factory_ecommerce_homepage:
+    path:     /accueil/{name}/{surname}/{societe}
+    defaults: { _controller: MyScentFactoryEcommerceBundle:Default:index }

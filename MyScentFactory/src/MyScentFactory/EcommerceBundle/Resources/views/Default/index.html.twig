@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block navigation%}
+    <ul>
+        <li>Home</li>
+        <li>My Espace membre</li>
+        <li>Scent Catalogue</li>
+        <li>Factory story</li>
+    </ul>
+{% endblock %}
+{% block body %}
+    {% set creatrice = 'Niyagalé Dramé' %}
+
+
+
+    Article published: {{ "now"|date("d/m/y") }} <br><br>
+Hello {{ name}} {{  surname }}! <br>
+    Bienvenue chez {{ societe }}<br><br>
+    Je vous présente la créatrice {{ creatrice }}.
+    <br><br>
+
+    {% for picture in photo %}
+{{ picture }} <br>
+{% endfor %}
+
+{% endblock %}

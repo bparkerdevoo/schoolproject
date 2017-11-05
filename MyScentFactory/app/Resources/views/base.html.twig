@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}MSF!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <header>
+        header
+        <hr>
+        <hr>
+    </header>
+        {% block navigation %}{% endblock %}
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+    <hr>
+    <hr>
+    <footer>
+footer
+    </footer>
+    </body>
+</html>

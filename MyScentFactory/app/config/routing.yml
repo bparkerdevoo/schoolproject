@@ -1,0 +1,7 @@
+my_scent_factory_ecommerce:
+    resource: "@MyScentFactoryEcommerceBundle/Resources/config/routing.yml"
+    prefix:   /MyScentFactory
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
