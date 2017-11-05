@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
+
     public function indexAction($name, $surname)
     {
         $ste = 'My Scent Factory';
@@ -15,5 +16,9 @@ class DefaultController extends Controller
                 'surname' => $surname,
                 'societe'=> $ste,
                 'photo'=>$picture]);
+    }
+
+    public function homeAction(){
+        return $this->render('MyScentFactoryEcommerceBundle:Default:home.html.twig');
     }
 }

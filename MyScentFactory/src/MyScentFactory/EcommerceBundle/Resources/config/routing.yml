@@ -1,3 +1,15 @@
 my_scent_factory_ecommerce_homepage:
     path:     /accueil/{name}/{surname}/{societe}
-    defaults: { _controller: MyScentFactoryEcommerceBundle:Default:index }
+    defaults: {_controller: MyScentFactoryEcommerceBundle:Default:index }
+
+msf_homepage:
+    path:     /home
+    defaults: {_controller: MyScentFactoryEcommerceBundle:Default:home }
+
+susbscription:
+    path: /Inscription
+    defaults: {_controller:MyScentFactoryEcommerceBundle:Subscribe:subscribe }
+
+connexion:
+    path: /Connexion
+    defaults: {_controller:MyScentFactoryEcommerceBundle:Subscribe:login }
